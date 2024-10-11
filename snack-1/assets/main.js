@@ -23,3 +23,13 @@ const raceBikes = [
         weight: 9.4
     },
 ];
+
+for (i = 0; i < raceBikes.length; i++) {
+    const bike = raceBikes[i];
+    const weight = bike.weight;
+    console.log(weight);
+
+    // come isolare il valore più basso?
+}
+
+// metodi da usare: .sort(), toSorted()
