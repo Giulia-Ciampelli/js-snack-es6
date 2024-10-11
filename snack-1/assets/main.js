@@ -5,6 +5,11 @@ console.log('im alive');
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore.
 
+// variabili
+let minWeight = Infinity;
+let lightestBike;
+const outputElement = document.getElementById('output');
+
 const raceBikes = [
     {
         name: 'Kabon',
@@ -24,10 +29,7 @@ const raceBikes = [
     },
 ];
 
-// variabile di conto
-let minWeight = Infinity;
-let lightestBike;
-
+// ciclo for per cercare in tutto l'array
 for (i = 0; i < raceBikes.length; i++) {
     const bike = raceBikes[i];
     let weight = bike.weight;
@@ -39,4 +41,5 @@ for (i = 0; i < raceBikes.length; i++) {
     }
 }
 
-console.log(lightestBike);
+// stampa in schermo
+outputElement.innerHTML = `Bici più leggera: ${lightestBike.name}, ${lightestBike.weight}kg`;
