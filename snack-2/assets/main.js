@@ -7,6 +7,9 @@ console.log('im alive too');
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+// variabili
+let result = [];
+
 const teams = [
     {
         name: 'Barcelona',
@@ -46,4 +49,6 @@ for (i = 0; i < teams.length; i++) {
     team.fouls = randomNum();
     team.goals = randomNum();
     console.log(team.fouls, team.goals);
+    result = `Nome: ${team.name}; Falli subiti: ${team.fouls}`;
+    console.log(result);
 }
