@@ -34,3 +34,8 @@ const teams = [
         goals: 0
     }
 ];
+
+// funzione random da richiamare nel loop
+function randomNum(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
