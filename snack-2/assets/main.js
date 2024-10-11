@@ -48,7 +48,6 @@ for (i = 0; i < teams.length; i++) {
     const team = teams[i];
     team.fouls = randomNum();
     team.goals = randomNum();
-    console.log(team.fouls, team.goals);
     result = `Nome: ${team.name}; Falli subiti: ${team.fouls}`;
     console.log(result);
 }
