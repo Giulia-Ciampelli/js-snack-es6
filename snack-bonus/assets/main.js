@@ -4,9 +4,6 @@ console.log('im alive three');
 // Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
 
-// variabili
-let result = [];
-
 let classes = [
     {
         name: 'Class 1',
@@ -32,14 +29,23 @@ let classes = [
 
 function indexBetween(arr, a, b) {
     
+    // variabili
+    let result = [];
+    
     // accesso agli indici
     arr[a];
-
+    
     // condizionale per tenere a minore di b
-    if (a < b) {
+    if (a >= b) {
         alert('Errore: "a" devessere minore di "b"');
         return;
     }
+
+    // ciclo for che parte da a e finisce con b
+    for (let i = a; i < b; i++) {
+        result.push(arr[i]);
+    }
+    return result;
 }
 
-indexBetween(classes, 2);
+console.log(indexBetween(classes, 1, 4));
