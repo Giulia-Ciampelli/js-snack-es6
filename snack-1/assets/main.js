@@ -30,6 +30,7 @@ for (i = 0; i < raceBikes.length; i++) {
     console.log(weight);
 
     // come isolare il valore più basso?
+    console.log(Math.min(weight));
 }
 
-// metodi da usare: .sort(), toSorted()
+// metodi da usare: math.min()
