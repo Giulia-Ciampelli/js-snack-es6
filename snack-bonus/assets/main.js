@@ -5,6 +5,7 @@ console.log('im alive three');
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
 
 // variabili
+let result = [];
 
 let classes = [
     {
