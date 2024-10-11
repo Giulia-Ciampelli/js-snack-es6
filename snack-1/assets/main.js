@@ -24,13 +24,19 @@ const raceBikes = [
     },
 ];
 
+// variabile di conto
+let minWeight = Infinity;
+let lightestBike;
+
 for (i = 0; i < raceBikes.length; i++) {
     const bike = raceBikes[i];
-    const weight = bike.weight;
-    console.log(weight);
+    let weight = bike.weight;
 
-    // come isolare il valore più basso?
-    console.log(Math.min(weight));
+    // comparazione peso bici
+    if (weight < minWeight) {
+        minWeight = weight;
+        lightestBike = bike;
+    }
 }
 
-// metodi da usare: math.min()
+console.log(lightestBike);
