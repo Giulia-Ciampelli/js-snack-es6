@@ -36,6 +36,14 @@ const teams = [
 ];
 
 // funzione random da richiamare nel loop
-function randomNum(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+function randomNum() {
+    return Math.floor(Math.random() * 100) + 1;
+}
+
+// ciclo for per passare la funzione random sulle proprietà fouls e goals
+for (i = 0; i < teams.length; i++) {
+    const team = teams[i];
+    team.fouls = randomNum();
+    team.goals = randomNum();
+    console.log(team.fouls, team.goals);
 }
