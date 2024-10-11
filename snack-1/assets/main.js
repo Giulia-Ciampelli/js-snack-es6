@@ -7,27 +7,19 @@ console.log('im alive');
 
 const raceBikes = [
     {
-        name: '',
-        weight: 
+        name: 'Kabon',
+        weight: 8.3
     },
     {
-        name: '',
-        weight: 
+        name: 'Savadeck',
+        weight: 8.4
     },
     {
-        name: '',
-        weight: 
+        name: 'Hiland',
+        weight: 13.8
     },
     {
-        name: '',
-        weight: 
+        name: 'Kootu',
+        weight: 9.4
     },
-    {
-        name: '',
-        weight: 
-    },
-    {
-        name: '',
-        weight: 
-    }
 ];
