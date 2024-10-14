@@ -48,6 +48,13 @@ for (i = 0; i < teams.length; i++) {
     const team = teams[i];
     team.fouls = randomNum();
     team.goals = randomNum();
-    result = `Nome: ${team.name}; Falli subiti: ${team.fouls}`;
-    console.log(result);
+    result.push ({
+        name: team.name,
+        fouls: team.fouls
+    })
 }
+
+// output
+console.log(result);
+
+// altra opzione: Math.ceil(Math.random())
